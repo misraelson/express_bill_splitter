@@ -1,0 +1,19 @@
+<div style="margin: 20px; padding: 20px; border: solid 10px black"> 
+  <h1>Enter Two Bill Details:</h1>
+  <form action="/bill_splitter_form_submit">
+    <div>
+      <label for="amount">Bill Amount $</label>
+      <input type="number" id="amount" name="amount" min="1" max="200000" value="<%=amount%>"/>
+        
+      <label for="tax">Tax %</label>
+      <input type="number" id="tax" name="tax" min="1" max="100" value="<%=tax%>"/>
+      
+      <label for="tip">Tip %</label>
+      <input type="number" id="tip" name="tip" min="1" max="100" value="<%=tip%>"/>
+      
+      <label for="number_of_people">Number Of People</label>
+      <input type="number" id="number_of_people" name="number_of_people" min="1" max="100" value="<%=number_of_people%>"/>
+    </div>
+    <input type='submit' value='CALCULATE' style="background-color: orangered; width: 100px; height: 50px; text-align: center; text-size: 20px; margin: 20px;"/>
+  </form>
+</div>
